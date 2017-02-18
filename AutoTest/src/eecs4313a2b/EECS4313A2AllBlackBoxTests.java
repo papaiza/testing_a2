@@ -8,7 +8,7 @@ import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 
-@Suite.SuiteClasses({ MinuteStringTest.class })
+@Suite.SuiteClasses({ MinuteStringTest.class,IsAfterTest.class})
 @RunWith(Suite.class)
 public class EECS4313A2AllBlackBoxTests {
 
