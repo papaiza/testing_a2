@@ -17,11 +17,11 @@ public class IsAfterTest {
 		// which means we will test incorrect dates
 		
 		// ranges: 
-		// first date is not a real date | second date is after it
-		// first date is not a real date | second date is not after it
-		// first date is a real date and it is before second date
-		// first date is a real date and it is after second date
-		// first date is after the second date and second date is not a real date
+		// first date is not a real date | second date is after it - done
+		// first date is not a real date | second date is not after it - done
+		// first date is a real date and it is before second date - done
+		// first date is a real date and it is after second date - done
+		// first date is after the second date and second date is not a real date  - done
 		
 		Date d1 = new Date(2017,8,15);
 		Date d2 = new Date(2017,8,16);
@@ -36,7 +36,9 @@ public class IsAfterTest {
 
 		assertFalse(DateUtil.isAfter(invalid_date, d2));
 		assertTrue(DateUtil.isAfter(d2, invalid_date));
+		
 		assertFalse(DateUtil.isAfter(pre_invalid_date, invalid_date));
+		assertTrue(DateUtil.isAfter(invalid_date, pre_invalid_date));
 		
 		
 		
