@@ -1,4 +1,4 @@
-package eecs4313a2b;
+package AutoTest.src.eecs4313a2b;
 
 import net.sf.borg.common.DateUtil;
 import static org.junit.Assert.*;

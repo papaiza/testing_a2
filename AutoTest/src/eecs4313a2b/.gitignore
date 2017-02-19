@@ -1,3 +1,7 @@
 .classpath
 .project
 .settings/
+/EECS4313A2AllBlackBoxTests.class
+/IsAfterTest.class
+/MinuteStringTest.class
+/DayListTest.class
