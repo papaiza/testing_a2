@@ -1,4 +1,4 @@
-package AutoTest.src.eecs4313a2b;
+package eecs4313a2b;
 
 import net.sf.borg.model.Repeat;
 
@@ -29,7 +29,7 @@ public class DayListTest {
 		int k = 7;
 		String val = "dlist , ";
 		
-		for (int i = 0; i < 7; i++){
+		for (int i = 1; i <= 7; i++){
 			
 			
 			

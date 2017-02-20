@@ -1,4 +1,4 @@
-package AutoTest.src.eecs4313a2b;
+package eecs4313a2b;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
