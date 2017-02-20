@@ -7,7 +7,7 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-@Suite.SuiteClasses({  })
+@Suite.SuiteClasses({DayListTest.class,IsAfterTest.class,MinuteStringTest.class  })
 @RunWith(Suite.class)
 public class EECS4313A2AllWhiteBoxTests {
 
