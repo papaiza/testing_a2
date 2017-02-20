@@ -1,4 +1,4 @@
-package eecs4313a2b;
+package eecs4313a2w;
 
 import java.util.ArrayList;
 import java.util.Random;
