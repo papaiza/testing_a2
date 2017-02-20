@@ -3,9 +3,9 @@ package eecs4313a2b;
 import net.sf.borg.model.Repeat;
 
 import static org.junit.Assert.*;
+import eecs4313a2b.AllPermutations;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import org.junit.Test;
@@ -42,7 +42,6 @@ public class DayListTest {
 				
 		List<Integer> sq = new ArrayList<Integer>();
 		
-		
 		// C1 -> A1
 		assertEquals(sq, Repeat.getDaylist(""));
 		
@@ -65,22 +64,14 @@ public class DayListTest {
 
 		
 		// C4 => A1
-		for (int i = 1; i < 7; i++){
-			String val = "dlist,";
-			
-			List<Integer> sequence = new ArrayList<Integer>();
-			sequence.add(i);
-			val += i;
-			assertEquals(sequence, Repeat.getDaylist(val));
-			
-			for(int j = i + 1; j < 7; j++){
-				sequence.add(j);
-				val += j;
-				assertEquals(sequence, Repeat.getDaylist(val));
-			}
-			
-		}
 		
+		List<String> lists = AllPermutations.makeLists("", 7);
+		
+		for (int i = 0; i < lists.size(); i++){
+			String f = "dlist, ";
+			List<Integer> list = AllPermutations.createListFromString(lists.get(i));
+			assertEquals(list, Repeat.getDaylist(f + lists.get(i)));
+		}
 		
 		
 		

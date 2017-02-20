@@ -1,6 +1,7 @@
 package eecs4313a2b;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AllPermutations {
 
@@ -15,11 +16,11 @@ public class AllPermutations {
 			printBin(soFar + "1", iterations - 1);
 		}
 	}
-
-	public static void main(String[] args) {
-		// this prints out all the binary combinations of 7 digits
-
-		printBin("", 7);
+	
+	public static List<String> makeLists(String soFar, int iterations){
+		
+		List<String> lists = new ArrayList<String>();
+		printBin(soFar, iterations);
 
 		// if the digit in locatin 1 is a 0, then 1 is not part of the string
 		// for example 0001000 would translate to "4"
@@ -27,16 +28,41 @@ public class AllPermutations {
 		for (int i = 0; i < combinations.size(); i++) {
 
 			String current = combinations.get(i);
-
+			String combo = "";
+			
 			for (int j = 0; j < current.length(); j++) {
 				if (current.charAt(j) == '1') {
-					System.out.print(j + 1);
+					combo += j+ 1;
 				}
 
 			}
-			System.out.println();
+			lists.add(combo);
+			
 
 			// System.out.println(combinations.get(i));
+		}
+//		System.out.println(lists);
+		return lists;
+	}
+	
+	public static List<Integer> createListFromString(String sequence){
+		List<Integer> combo = new ArrayList<Integer>();
+		
+		for (int i = 0; i < sequence.length(); i++){
+			combo.add(Character.getNumericValue(sequence.charAt(i)));
+		}	
+		return combo;
+	}
+	
+
+	public static void main(String[] args) {
+		// this prints out all the binary combinations of 7 digits
+
+		
+		List<String> lists = makeLists("", 7);
+		
+		for (int i = 0; i < lists.size(); i++){
+			List<Integer> list = createListFromString(lists.get(i));
 		}
 
 	}
