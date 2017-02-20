@@ -1,0 +1,3 @@
+target=PrintNLevelBinaryTree
+classpath=.
+listener=gov.nasa.jpf.listener.StateSpaceDot

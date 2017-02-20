@@ -22,7 +22,7 @@ public class AllPermutations {
 		List<String> lists = new ArrayList<String>();
 		printBin(soFar, iterations);
 
-		// if the digit in locatin 1 is a 0, then 1 is not part of the string
+		// if the digit in location 1 is a 0, then 1 is not part of the string
 		// for example 0001000 would translate to "4"
 
 		for (int i = 0; i < combinations.size(); i++) {
