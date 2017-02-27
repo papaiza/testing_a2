@@ -32,6 +32,7 @@ public class MinuteStringTest {
 		assertEquals("1 Minute", DateUtil.minuteString(1));
 		
 		// 4. Nominal
+		assertEquals("60 Minute", DateUtil.minuteString(60));
 		assertEquals("17895697 Hours 3 Minutes", DateUtil.minuteString(1073741823));
 				
 		// 5. Max-

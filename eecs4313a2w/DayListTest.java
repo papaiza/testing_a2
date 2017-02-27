@@ -62,7 +62,7 @@ public class DayListTest {
 		//C6 -> A1
 		assertEquals(sq, Repeat.getDaylist("dlist, 1agc2"));
 
-		
+		assertEquals(sq, Repeat.getDaylist("dlist ,1"));
 		// C4 => A1
 		
 		List<String> lists = AllPermutations.makeLists("", 7);

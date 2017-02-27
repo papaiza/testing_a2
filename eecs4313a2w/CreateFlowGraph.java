@@ -261,68 +261,38 @@ public class CreateFlowGraph {
 							}
 						}
 					}
+				}
 			}
-			}} else {
+		} else {
+			if (random.nextBoolean()) {
 				if (random.nextBoolean()) {
 					if (random.nextBoolean()) {
 						if (random.nextBoolean()) {
 							if (random.nextBoolean()) {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							} else {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							}
 						} else {
 							if (random.nextBoolean()) {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							} else {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							}
 						}
@@ -330,61 +300,29 @@ public class CreateFlowGraph {
 						if (random.nextBoolean()) {
 							if (random.nextBoolean()) {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							} else {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							}
 						} else {
 							if (random.nextBoolean()) {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							} else {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							}
 						}
@@ -394,61 +332,29 @@ public class CreateFlowGraph {
 						if (random.nextBoolean()) {
 							if (random.nextBoolean()) {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							} else {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							}
 						} else {
 							if (random.nextBoolean()) {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							} else {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							}
 						}
@@ -456,66 +362,161 @@ public class CreateFlowGraph {
 						if (random.nextBoolean()) {
 							if (random.nextBoolean()) {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							} else {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							}
 						} else {
 							if (random.nextBoolean()) {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							} else {
 								if (random.nextBoolean()) {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								} else {
-									if (random.nextBoolean()) {
-										System.out.println("1");
-									} else {
-										System.out.println("1");
-									}
+									System.out.println("1");
 								}
 							}
 						}
+					}
 				}
+			} else {
+				if (random.nextBoolean()) {
+					if (random.nextBoolean()) {
+						if (random.nextBoolean()) {
+							if (random.nextBoolean()) {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							} else {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							}
+						} else {
+							if (random.nextBoolean()) {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							} else {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							}
+						}
+					} else {
+						if (random.nextBoolean()) {
+							if (random.nextBoolean()) {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							} else {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							}
+						} else {
+							if (random.nextBoolean()) {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							} else {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							}
+						}
+					}
+				} else {
+					if (random.nextBoolean()) {
+						if (random.nextBoolean()) {
+							if (random.nextBoolean()) {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							} else {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							}
+						} else {
+							if (random.nextBoolean()) {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							} else {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							}
+						}
+					} else {
+						if (random.nextBoolean()) {
+							if (random.nextBoolean()) {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							} else {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							}
+						} else {
+							if (random.nextBoolean()) {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							} else {
+								if (random.nextBoolean()) {
+									System.out.println("1");
+								} else {
+									System.out.println("1");
+								}
+							}
+						}
+					}
 				}
+			}
 		}
 		System.out.println("done");
 
