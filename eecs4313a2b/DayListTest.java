@@ -35,8 +35,8 @@ public class DayListTest {
 		 * C3 -> A2
 		 * C4 -> A1
 		 * C5 -> A2
-		 *
-		 * 
+		 * C6 -> A1
+		 * C7 -> A2
 		 */
 		
 				
