@@ -63,7 +63,7 @@ public class DayListTest {
 		assertEquals(sq, Repeat.getDaylist("dlist, 1agc2"));
 
 		
-		// C4 => A1
+		// C5 => A1
 		
 		List<String> lists = AllPermutations.makeLists("", 7);
 		
