@@ -35,8 +35,8 @@ public class DayListTest {
 		 * C3 -> A2
 		 * C4 -> A1
 		 * C5 -> A2
-		 *
-		 * 
+		 * C6 -> A1
+		 * C7 -> A2
 		 */
 		
 				
@@ -51,19 +51,19 @@ public class DayListTest {
 		//C6 -> A1
 		assertEquals(sq, Repeat.getDaylist("dlist, agc"));
 		
-		//C2 -> A1
+		//C2 -> A2
 		sq.add(1);
 		assertEquals(sq, Repeat.getDaylist("dlist, 1"));
 		
-		//C3 -> A1
+		//C3 -> A2
 		sq.add(2);
 		assertEquals(sq, Repeat.getDaylist("dlist 12"));
 		
-		//C6 -> A1
+		//C7 -> A2
 		assertEquals(sq, Repeat.getDaylist("dlist, 1agc2"));
 
 		
-		// C4 => A1
+		// C5 => A2
 		
 		List<String> lists = AllPermutations.makeLists("", 7);
 		
