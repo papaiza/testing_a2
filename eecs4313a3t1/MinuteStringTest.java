@@ -40,12 +40,50 @@ public class MinuteStringTest {
 
 		// 6. Max+
 //		assertEquals("35791394 Hours 8 Minutes", DateUtil.minuteString(2147483648));
+		assertEquals("1 Hour", DateUtil.minuteString(60));
+
+	}
+	
+	@Test
+	public void testDataFlowMins(){
+		
+		// All Defs: Path AB
+		// All Uses: Paths AB, ABC
+		// All P-Uses / Some C-uses: Path AB
+		// All C-uses / Some P-uses: Paths AB, ABC
+		assertEquals("2 Minutes", DateUtil.minuteString(2));
+	}
+	
+	@Test
+	public void testDataFlowHours(){
+		// All Defs: Path BCDEF
+		assertEquals("2 Hours 2 Minutes", DateUtil.minuteString(122));
+		
+		// All Uses: Paths BCDEF, BCDEFG, BCDEFH, BCDEFHI, BCDEFHKMO
+		assertEquals("1 Hour 2 Minutes", DateUtil.minuteString(62));
+		assertEquals("2 Hours 2 Minutes", DateUtil.minuteString(122));
+		assertEquals("1 Hour", DateUtil.minuteString(60));
+		
+		// All P-Uses / Some C-uses: Paths BCDEFHKMO
+		assertEquals("1 Hour", DateUtil.minuteString(60));
+		
+		// All C-uses / Some P-uses: Paths BCDEFG, BCDEFHI
+		assertEquals("1 Hour 5 Minutes", DateUtil.minuteString(65));
+		assertEquals("2 Hours 12 Minutes", DateUtil.minuteString(132));
+	}
+	
+	@Test
+	public void testDataFlowMinsPast(){
 		
 	}
 	
 	@Test
-	public void testDataFlowMinuteString(){
+	public void testDataFlowMinutesString(){
 		
 	}
 	
+	@Test
+	public void testDataFlowHoursString(){
+		
+	}
 }
