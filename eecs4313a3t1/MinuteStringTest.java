@@ -74,16 +74,66 @@ public class MinuteStringTest {
 	
 	@Test
 	public void testDataFlowMinsPast(){
+		// All Defs: Path CDEFHK
+		assertEquals("2 Minutes", DateUtil.minuteString(2));
 		
+		// All Uses: Paths CDEFHK, CDEFHKL, CDEFHKM, CDEFHKMN, CDEFHKMNOQ
+		assertEquals("1 Hour 1 Minute", DateUtil.minuteString(61));
+		assertEquals("0 Minutes", DateUtil.minuteString(0));
+		
+		// All P-Uses / Some C-uses: Paths CDEFHK, CDEFHKM
+		assertEquals("1 Hour 3 Minutes", DateUtil.minuteString(63));
+		assertEquals("2 Hours 1 Minute", DateUtil.minuteString(121));
+		
+		// All C-uses / Some P-uses: Paths CDEFHKL, CDEFHKMN, CDEFHKMNOQ
+		assertEquals("1 Hour 5 Minutes", DateUtil.minuteString(65));
+		assertEquals("2 Hours 12 Minutes", DateUtil.minuteString(132));
 	}
 	
 	@Test
 	public void testDataFlowMinutesString(){
+		// All Defs: Path DEFHKL
+		assertEquals("2 Minutes", DateUtil.minuteString(2));
 		
+		// All Uses: Paths DEFHKL, DEFHKMN , DEFHKMOP, DEFHKMOQ, DEFHKMOR, DEFHKMORS, DEFHKMORST
+		assertEquals("1 Hour 1 Minute", DateUtil.minuteString(61));
+		assertEquals("0 Minutes", DateUtil.minuteString(0));
+		assertEquals("1 Hour", DateUtil.minuteString(60));
+		
+		// All P-Uses / Some C-uses: Paths DEFHKMOR
+		assertEquals("2 Hours 1 Minute", DateUtil.minuteString(121));
+		assertEquals("1 Hour", DateUtil.minuteString(60));
+		assertEquals("0 Minutes", DateUtil.minuteString(0));
+		
+		// All C-uses / Some P-uses: Paths DEFHKL, DEFHKMN , DEFHKMOP, DEFHKMOQ, DEFHKMORS, DEFHKMORST
+		assertEquals("1 Hour 5 Minutes", DateUtil.minuteString(65));
+		assertEquals("2 Hours 1 Minute", DateUtil.minuteString(121));
+		assertEquals("2 Minutes", DateUtil.minuteString(2));
+		assertEquals("1 Hour", DateUtil.minuteString(60));
+
 	}
 	
 	@Test
 	public void testDataFlowHoursString(){
 		
+		// All Defs: Path EFG
+		assertEquals("3 Hours", DateUtil.minuteString(180));
+		
+		// All Uses: Paths EFG, EFHI, EFHJ, EFHKMOR, EFHKMORT
+		assertEquals("1 Hour 1 Minute", DateUtil.minuteString(61));
+		assertEquals("2 Hours 1 Minute", DateUtil.minuteString(121));
+		assertEquals("0 Minutes", DateUtil.minuteString(0));
+		assertEquals("1 Hour", DateUtil.minuteString(60));
+		
+		// All P-Uses / Some C-uses: Paths  EFHKMOR
+		assertEquals("2 Hours 1 Minute", DateUtil.minuteString(121));
+		assertEquals("1 Hour", DateUtil.minuteString(60));
+		assertEquals("0 Minutes", DateUtil.minuteString(0));
+		
+		// All C-uses / Some P-uses: Paths EFG, EFHI, EFHJ, EFHKMORT
+		assertEquals("1 Hour 5 Minutes", DateUtil.minuteString(65));
+		assertEquals("2 Hours 1 Minute", DateUtil.minuteString(121));
+		assertEquals("2 Minutes", DateUtil.minuteString(2));
+
 	}
 }
