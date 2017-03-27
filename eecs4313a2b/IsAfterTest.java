@@ -40,6 +40,12 @@ public class IsAfterTest {
 
 		assertFalse(DateUtil.isAfter(pre_invalid_date, invalid_date));
 		assertTrue(DateUtil.isAfter(invalid_date, pre_invalid_date));
+		
+		Date feb = new Date(2017, 2, 31);
+		Date march = new Date(2017, 3, 1);
+		
+		assertTrue(DateUtil.isAfter(march, feb));
+		assertFalse(DateUtil.isAfter(feb, march));
 
 	}
 
