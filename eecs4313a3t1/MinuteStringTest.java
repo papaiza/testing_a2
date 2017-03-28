@@ -136,4 +136,5 @@ public class MinuteStringTest {
 		assertEquals("2 Minutes", DateUtil.minuteString(2));
 
 	}
+
 }

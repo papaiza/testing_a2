@@ -68,13 +68,16 @@ public class DayListTest {
 		List<String> lists = AllPermutations.makeLists("", 7);
 		
 		for (int i = 0; i < lists.size(); i++){
-			String f = "dlist, ";
+			String f = "dlist ";
 			List<Integer> list = AllPermutations.createListFromString(lists.get(i));
 			assertEquals(list, Repeat.getDaylist(f + lists.get(i)));
 		}
 		
-		
-		
+		// New Test Because of Mutation Testing
+		List<Integer> l = new ArrayList<Integer>();
+		l.add(1);
+		assertEquals(l, Repeat.getDaylist("dlist2 1"));
+		assertEquals(l, Repeat.getDaylist("dlist2  1,"));
 	}
 	
 }

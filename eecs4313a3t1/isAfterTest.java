@@ -46,6 +46,11 @@ public class isAfterTest {
 		
 		assertTrue(DateUtil.isAfter(march, feb));
 		assertFalse(DateUtil.isAfter(feb, march));
+		
+		Date d3 = new Date(2017, 8, 15, 8, 30, 22);
+		Date d4 = new Date(2017, 8, 16, 8, 30, 22);
+		assertTrue(DateUtil.isAfter(d4, d3));
+		assertFalse(DateUtil.isAfter(d3, d4));
 
 	}
 
