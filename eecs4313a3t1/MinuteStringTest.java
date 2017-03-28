@@ -95,7 +95,7 @@ public class MinuteStringTest {
 		// All Defs: Path DEFHKL
 		assertEquals("2 Minutes", DateUtil.minuteString(2));
 		
-		// All Uses: Paths DEFHKL, DEFHKMN , DEFHKMOP, DEFHKMOQ, DEFHKMOR, DEFHKMORS, DEFHKMORST
+		// All Uses: Paths DEFHKL, DEFHKMN , DEFHKMOP, DEFHKMOQ, DEFHKMOR, DEFHKMORS, ST
 		assertEquals("1 Hour 1 Minute", DateUtil.minuteString(61));
 		assertEquals("0 Minutes", DateUtil.minuteString(0));
 		assertEquals("1 Hour", DateUtil.minuteString(60));
@@ -105,7 +105,7 @@ public class MinuteStringTest {
 		assertEquals("1 Hour", DateUtil.minuteString(60));
 		assertEquals("0 Minutes", DateUtil.minuteString(0));
 		
-		// All C-uses / Some P-uses: Paths DEFHKL, DEFHKMN , DEFHKMOP, DEFHKMOQ, DEFHKMORS, DEFHKMORST
+		// All C-uses / Some P-uses: Paths DEFHKL, DEFHKMN , DEFHKMOP, DEFHKMOQ, DEFHKMORS, ST
 		assertEquals("1 Hour 5 Minutes", DateUtil.minuteString(65));
 		assertEquals("2 Hours 1 Minute", DateUtil.minuteString(121));
 		assertEquals("2 Minutes", DateUtil.minuteString(2));
