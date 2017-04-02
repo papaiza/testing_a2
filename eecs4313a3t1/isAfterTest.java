@@ -48,8 +48,10 @@ public class isAfterTest {
 		assertFalse(DateUtil.isAfter(feb, march));
 		
 		Date d3 = new Date(2017, 8, 15, 8, 30, 22);
-		Date d4 = new Date(2017, 8, 16, 8, 30, 22);
-		assertTrue(DateUtil.isAfter(d4, d3));
+		Date d4 = new Date(2017, 8, 15, 9, 30, 22);
+		// Since both happen at the same day, but at different hours and 
+		// the implementation ignores HMS, it will always be false
+		assertFalse(DateUtil.isAfter(d4, d3));
 		assertFalse(DateUtil.isAfter(d3, d4));
 
 	}
