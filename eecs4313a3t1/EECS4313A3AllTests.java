@@ -6,7 +6,9 @@ import org.junit.runner.RunWith;
 import org.junit.runner.notification.Failure;
 import org.junit.runners.Suite;
 
-import eecs4313a2b.MinuteStringTest;
+import eecs4313a3t1.MinuteStringTest;
+import eecs4313a3t1.DayListTest;
+import eecs4313a3t1.isAfterTest;
 
 @Suite.SuiteClasses({ MinuteStringTest.class, isAfterTest.class, DayListTest.class})
 @RunWith(Suite.class)
